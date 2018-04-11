@@ -2,6 +2,7 @@
 
 var MarkdownIt = require('markdown-it');
 var hljs = require('highlight.js');
+var taskLists = require('markdown-it-task-lists');
 var server = require('http').createServer(httpHandler),
     exec = require('child_process').exec,
     io = require('socket.io').listen(server),
@@ -33,7 +34,7 @@ var md = new MarkdownIt({
       return str;
     }
   }
-});
+}).use(taskLists, {enabled: true});
 
 var lastWrittenMarkdown = '';
 function writeMarkdown(body) {
