@@ -1,13 +1,17 @@
 {
   "author": "Suan-Aik Yeo <yeosuanaik@gmail.com>",
-  "name": "instant-markdown-d",
+  "name": "instant-markdown",
   "description": "Instantly-updating Markdown Server",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engine": "node",
   "main": "instant-markdown-d",
   "preferGlobal": "true",
   "bin": {
     "instant-markdown-d": "./instant-markdown-d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youthink/instant-markdown.git"
   },
   "dependencies": {
     "highlight.js": "^9.12.0",
